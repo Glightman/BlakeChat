@@ -1,4 +1,5 @@
 using BlakeChat.Data;
+using BlakeChat.Hubs;
 using BlakeChat.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,6 +32,7 @@ namespace BlakeChat
             services.AddDbContext<Context>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("BlakeChat")));
             services.AddDefaultIdentity<AppUser>().AddEntityFrameworkStores<Context>();
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +58,7 @@ namespace BlakeChat
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<ChatHub>("/chathub");
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

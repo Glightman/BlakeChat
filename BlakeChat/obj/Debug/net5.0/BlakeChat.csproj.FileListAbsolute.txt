@@ -389,3 +389,5 @@ C:\Users\gabri\OneDrive\Documentos\GitHub\BlakeChat\BlakeChat\obj\Debug\net5.0\B
 C:\Users\gabri\OneDrive\Documentos\GitHub\BlakeChat\BlakeChat\obj\Debug\net5.0\ref\BlakeChat.dll
 C:\Users\gabri\OneDrive\Documentos\GitHub\BlakeChat\BlakeChat\obj\Debug\net5.0\BlakeChat.pdb
 C:\Users\gabri\OneDrive\Documentos\GitHub\BlakeChat\BlakeChat\obj\Debug\net5.0\BlakeChat.genruntimeconfig.cache
+C:\Users\gabri\OneDrive\Documentos\GitHub\BlakeChat\BlakeChat\obj\Debug\net5.0\Razor\Views\Chat\Index.cshtml.g.cs
+C:\Users\gabri\OneDrive\Documentos\GitHub\BlakeChat\BlakeChat\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
