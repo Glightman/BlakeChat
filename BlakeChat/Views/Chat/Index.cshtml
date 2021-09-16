@@ -30,7 +30,7 @@
         @foreach (var message in messages.OrderBy(m => m.DateTime))
         {
             var position = username == message.userName ? "text-right" : "text-left";
-            var alert = username == message.userName ? "alert_info" : "alert-secundary";
+            var alert = username == message.userName ? "alert-info" : "alert-secundary";
             <div class="row">
                 <div class="col-md-12 @position">
                     <small class="text-dark">@message.userName</small>
@@ -94,7 +94,8 @@
             var messageDt = document.createElement("small");
 
             messageDt.className = "text-info";
-            messageDt.textContent = formatDate(data.getDate);
+            messageDt.textContent = formatDate(data.dateTime);
+            console.log(data);
             messageAlert.appendChild(messageAlertMessage);
             messageCol.appendChild(messageUser);
             messageCol.appendChild(messageAlert);
